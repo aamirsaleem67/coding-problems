@@ -1,0 +1,41 @@
+{
+    "name": "coding-problems",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint .",
+        "format": "prettier --write './src/**.{js,json}' --config ./.prettierrc --ignore-path ./.gitignore",
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
+    },
+    "keywords": [],
+    "author": "Aamir Saleem <aamirsaleem167@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^15.0.0",
+        "@commitlint/config-conventional": "^15.0.0",
+        "@types/jest": "^27.0.3",
+        "eslint": "^8.4.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jest": "^25.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.4",
+        "jest": "^27.4.3",
+        "lint-staged": "^12.1.2",
+        "prettier": "^2.5.1"
+    },
+    "lint-staged": {
+        "./src/**": [
+            "npm run lint",
+            "npm run format"
+        ]
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    }
+}
