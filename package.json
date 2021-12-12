@@ -30,7 +30,7 @@
         "prettier": "^2.5.1"
     },
     "lint-staged": {
-        "./src/**/**": [
+        "./src/**/**.{js,json}": [
             "npm run lint",
             "npm run format"
         ]
