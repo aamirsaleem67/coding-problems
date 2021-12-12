@@ -6,7 +6,7 @@
     "scripts": {
         "test": "jest",
         "lint": "eslint .",
-        "format": "prettier --write './src/**.{js,json}' --config ./.prettierrc --ignore-path ./.gitignore",
+        "format": "prettier --write './src/**/**.{js,json}' --config ./.prettierrc --ignore-path ./.gitignore",
         "prepare": "husky install",
         "lint-staged": "lint-staged"
     },
@@ -30,7 +30,7 @@
         "prettier": "^2.5.1"
     },
     "lint-staged": {
-        "./src/**": [
+        "./src/**/**": [
             "npm run lint",
             "npm run format"
         ]
