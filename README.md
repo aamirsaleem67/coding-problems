@@ -9,7 +9,7 @@ only and it is **not** meant to be used for production.*
 
 ## Platforms
 
-Markup : 1. [Rally Coding ](src/rally-coding)
+1. [Rally Coding ](src/rally-coding)
 
 ```
 npm install
